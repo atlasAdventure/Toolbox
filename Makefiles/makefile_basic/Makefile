@@ -1,3 +1,6 @@
+#target : prerequisites
+#<tab>command
+#	command
 executableName : main.o				
 	g++ main.o -o executableName                
 main.o: main.c
@@ -7,4 +10,4 @@ main.c:
 
 # Clean
 clean:
-	rm -f main.c main.o executableName
+	rm -f main.c main.o executableName 

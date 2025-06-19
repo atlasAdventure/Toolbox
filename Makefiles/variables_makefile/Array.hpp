@@ -2,10 +2,13 @@
  * Array Class
  */
 
- #ifndef _ARRAY_H_
- #define _ARRAY_H_
+ // For std:: library
+#include <iostream>
 
- #define MAX_SIZE_ARRAY 100
+#ifndef _ARRAY_H_
+#define _ARRAY_H_
+
+#define MAX_SIZE_ARRAY 100
 
 class Array 
 {
@@ -26,12 +29,14 @@ class Array
             
         }
 
+        int returnOne(void);
+        
     private:
         // pointer to the data
         char * data_;
 
         // size of the array
-        size_t size_;
+        std::size_t size_;
 
         // max size of the array
         std::size_t max_size_;  
